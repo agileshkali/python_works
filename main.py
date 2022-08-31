@@ -1,0 +1,11 @@
+print("Welcome to the tip calculator")
+bill = input("What was the total bill ")
+ttl = float(bill)
+per = float(input("What percantage tip would you like to give? "))
+dvd1 = float(per/100)
+ppl = input("How many people to slpit the bill ")
+dd2 = ttl * dvd1
+pay = (float(ttl) + float(dd2)) / int(ppl)
+to_be_paid = round(pay, 2)
+to_be_paid = "{:.2f}".format(pay)
+print(f"Each person should pay {to_be_paid}")
